@@ -3,11 +3,13 @@
 from datetime import datetime
 from tensorflow.python.platform import gfile
 import numpy as np
-import tensorflow as tf
 from dataset import DataSet
 from dataset import output_predict
 import model
 import train_operation as op
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 MAX_STEPS = 10000000
 LOG_DEVICE_PLACEMENT = True

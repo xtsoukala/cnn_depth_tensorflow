@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-import tensorflow as tf
+from task import tf
 
 NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN = 500
 NUM_EPOCHS_PER_DECAY = 30

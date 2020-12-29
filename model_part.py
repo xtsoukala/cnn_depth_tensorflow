@@ -1,4 +1,5 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 TOWER_NAME = 'tower'
 UPDATE_OPS_COLLECTION = '_update_ops_'

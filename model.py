@@ -1,10 +1,9 @@
 # encoding: utf-8
 
 # tensorflow
-import tensorflow as tf
 import math
 from model_part import conv2d
-from model_part import fc
+from model_part import fc, tf
 
 def inference(images, reuse=False, trainable=True):
     coarse1_conv = conv2d('coarse1', images, [11, 11, 3, 96], [96], [1, 4, 4, 1], padding='VALID', reuse=reuse, trainable=trainable)

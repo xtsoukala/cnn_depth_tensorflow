@@ -1,7 +1,9 @@
-import tensorflow as tf
 from tensorflow.python.platform import gfile
 import numpy as np
 from PIL import Image
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 IMAGE_HEIGHT = 228
 IMAGE_WIDTH = 304
